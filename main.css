@@ -11,7 +11,7 @@ body {
   position: relative;
 }
 
-#street {
+#street, #street-container {
   position: fixed;
   background-color: #333;
   height: 22vh;
