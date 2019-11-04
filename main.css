@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 #circle {
@@ -10,6 +11,39 @@ body {
   position: relative;
 }
 
+#street {
+  position: fixed;
+  background-color: #333;
+  height: 33vh;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+.line {
+ z-index: 2;
+ background-color: yellow;
+ position: fixed;
+ height: 2.45vh;
+ width: 30%;
+ bottom: 15%;
+ left: 5%;
+}
+
+#line-1 {
+ 
+}
+
+#line-2 {
+ left: 40%;
+}
+
+#line-3 {
+  left: 75%;
+}
+
+
+
 .move {
   animation: moveR 5s;
 }
@@ -17,4 +51,9 @@ body {
 @keyframes moveR {
   from { left: 0; }
   to { left: 100%; }
+}
+
+@keyframes moveLine {
+  from { left: 5% }
+  to { left: 100% }
 }
